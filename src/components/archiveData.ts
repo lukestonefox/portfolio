@@ -8,16 +8,16 @@ interface ProjectProps {
 
 const ArchiveData: ProjectProps[] = [
     {
-        name: "Project 1",
-        year: 2021,
-        where: "Online",
+        name: "Nomad",
+        year: 2024,
+        where: "University of Cincinnati",
         technologies: ["React", "TypeScript", "TailwindCSS"],
         github: "https://github.com"
     },
     {
-        name: "Project 2",
-        year: 2022,
-        where: "Online",
+        name: "Storefront",
+        year: 2024,
+        where: "University of Cincinnati",
         technologies: ["React", "TypeScript", "TailwindCSS"],
         github: "https://github.com"
     }

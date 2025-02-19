@@ -1,11 +1,13 @@
 import './App.css'
 import Archive from '../components/Archive'
+import { Link } from 'react-router'
 
 function App() {
 
   return (
     <>
-      <Archive />
+      yo
+    <Link to="/archive">Archive</Link>
     </>
   )
 }
