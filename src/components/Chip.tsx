@@ -1,6 +1,6 @@
 function Chip(props: {label: string}) {
     return (
-        <div className="px-2 py-1 bg-white/50 rounded-md">
+        <div className="px-3 py-1 bg-white/50 rounded-2xl">
             {props.label}
         </div>
     )

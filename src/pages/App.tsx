@@ -14,16 +14,16 @@ function App() {
 
   return (
     <>
-      <div className='w-screen h-screen flex bg-gray-200'>
-        <div className='px-48 flex w-full flex-col lg:flex-row items-center gap-y-4 justify-between h-full'>
+      <div className='flex w-screen h-screen bg-gray-200'>
+        <div className='flex flex-col items-center justify-between w-full h-full px-48 lg:flex-row gap-y-4'>
           <div className='w-full max-w-[10%]'>
             <Header />
           </div>
-          <div className='overflow-y-auto max-h-screen w-[70%]'>
+          <div className='w-2/3 max-h-screen overflow-y-auto'>
             <Projects />
             <Experience />
             {/* {Array.from({ length: 100 }, (_, i) => (
-              <div key={i} className='w-14 bg-red-300'>scroll</div>
+              <div key={i} className='bg-red-300 w-14'>scroll</div>
             ))} */}
           </div>
         </div>
