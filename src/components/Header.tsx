@@ -2,8 +2,8 @@ import {Linkedin, Github} from 'lucide-react';
 
 function Header() {
     return (
-        <header className="w-full flex flex-col">
-            <div className='font-semibold text-nowrap text-7xl'>Lucas Fox</div>
+        <header className="w-full flex flex-col gap-y-4">
+            <div className='font-semibold text-nowrap text-2xl md:text-4xl xl:text-7xl'>Lucas Fox</div>
             <div className="flex flex-row gap-x-4">
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
