@@ -27,7 +27,7 @@ function Experience() {
             <div key={index} className="flex flex-row w-full p-2 duration-200 rounded-md gap-x-4 hover:bg-black/5 hover:[&>div>h1]:text-gray-800">
                 <p className="text-nowrap w-[15%] font-semibold text-md">{data.date}</p>
                 <div className="w-[60%] flex flex-col gap-y-2">
-                    <h1 className="text-lg font-semibold text-nowrap flex flex-row gap-x-4">
+                    <h1 className="flex flex-row text-lg font-semibold text-nowrap gap-x-4">
                         <p>{data.title}</p><a href={data.companyLink} target="_blank" rel="noopener noreferrer" className="flex flex-row">Cincinnati Children's Hospital<ArrowUpRight absoluteStrokeWidth strokeWidth={1.25} size={12}/></a>
                     </h1>
                     <div>
@@ -43,8 +43,8 @@ function Experience() {
                 </div>
             </div>
         ))}
-        <div className="flex flex-row w-full text-start">
-            <a href="src\assets\LucasFoxSpring2025.pdf" target="_blank" className="font-semibold flex flex-row">View Full Resume<ArrowUpRight absoluteStrokeWidth strokeWidth={1.25} size={12}/></a>
+        <div className="flex flex-row w-full p-2 text-start">
+            <a href="src\assets\LucasFoxSpring2025.pdf" target="_blank" className="flex flex-row font-semibold">View Full Resume<ArrowUpRight absoluteStrokeWidth strokeWidth={1.25} size={12}/></a>
         </div>
     </section>
   );
