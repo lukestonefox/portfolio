@@ -31,17 +31,17 @@ function App() {
 
   return (
     <>
-      <div className='flex w-screen h-screen bg-green-400 dark:bg-amber-400'>
-        <div className='flex flex-col items-center justify-between w-full h-full p-24 xl:px-48 xl:flex-row gap-y-4'>
+      <div className='flex w-screen h-screen bg-gray-200'>
+        <div className='flex flex-col justify-between w-full h-full mx-auto pt-36 xl:px-48 xl:flex-row gap-y-4'>
           <div className='w-full max-w-[10%]'>
             <Header />
             <button onClick={toggleDarkMode}>Toggle Darkmode</button>
           </div>
-          <div className='w-2/3 max-h-screen overflow-y-auto'>
+          <main className='w-[54%] max-h-screen flex flex-col gap-y-16 overflow-y-auto'>
             <Intro />
             <Projects />
             <Experience />
-          </div>
+          </main>
         </div>
       </div>
     </>

@@ -25,7 +25,7 @@ const ProjectData: ProjectDataType[] = [
 
 function Projects() {
     return (
-        <section id="projects" className="flex flex-col items-center justify-center w-full h-screen py-8">
+        <section id="projects" className="flex flex-col items-center justify-center w-full py-8">
             {ProjectData.map((data, index) => (
                 <div key={index} className="flex flex-col w-full p-2 duration-200 rounded-md gap-y-4 hover:bg-black/5 hover:text-gray-800">
                     <h1 className="text-2xl font-semibold">{data.title}</h1>
