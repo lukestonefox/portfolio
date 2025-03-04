@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import Chip from "./Chip";
+import ArchiveData from "./archiveData";
 
 interface ProjectDataType {
     title: string;
@@ -24,13 +25,14 @@ const ProjectData: ProjectDataType[] = [
 ]
 
 function Projects() {
+
+    const firstFewProjects = ArchiveData.slice(0, 3);
     return (
         <section id="projects" className="flex flex-col items-center justify-center w-full h-screen py-8">
-            {ProjectData.map((data, index) => (
+            {firstFewProjects.map((data, index) => (
                 <div key={index} className="flex flex-col w-full p-2 duration-200 rounded-md gap-y-4 hover:bg-black/5 hover:text-gray-800">
-                    <h1 className="text-2xl font-semibold">{data.title}</h1>
-                    <p>{data.date}</p>
-                    <p>{data.description}</p>
+                    <h1 className="text-2xl font-semibold">{data.name}</h1>
+                    <p>{data.year}</p>
                     <div className="flex flex-row w-min gap-x-2">
                         {data.technologies.map((tech, index) => (
                             <Chip key={index} label={tech}></Chip>
