@@ -24,7 +24,7 @@ function Experience() {
   return (
     <section id="experience" className="flex flex-col items-center justify-center w-full py-4 gap-y-4">
         {ExperienceData.map((data, index) => (
-            <div key={index} className="grid-cols-8 grid relative group p-2 duration-200 rounded-md gap-x-4 hover:bg-black/5 hover:[&>div>h1]:text-red-800">
+            <div key={index} className="grid-cols-8 grid w-full relative group p-2 duration-200 rounded-md gap-x-4 hover:bg-black/5 hover:[&>div>h1]:text-red-800">
                 <p className="col-span-2 mt-1 font-semibold tracking-wide text-nowrap text-md">{data.date}</p>
                 <div className="flex flex-col col-span-6 gap-y-2">
                     <h1 className="flex flex-row text-lg font-semibold text-nowrap gap-x-4">

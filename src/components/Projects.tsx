@@ -2,28 +2,6 @@ import { Link } from "react-router";
 import Chip from "./Chip";
 import ArchiveData from "./archiveData";
 
-interface ProjectDataType {
-    title: string;
-    date: string;
-    description: string;
-    technologies: string[];
-}
-
-const ProjectData: ProjectDataType[] = [
-    {
-        title: "Nutripy",
-        date: "OCT 2023",
-        description: "A nutrition tracking app that helps users track their daily intake of food and water.",
-        technologies: ["React", "TypeScript", "Figma"]
-    },
-    {
-        title: "Application Auto Login",
-        date: "JUNE 2023",
-        description: "A Chrome extension that automatically logs users into applications.",
-        technologies: ["JavaScript", "HTML", "CSS"]
-    }
-]
-
 function Projects() {
 
     const firstFewProjects = ArchiveData.slice(0, 3);
