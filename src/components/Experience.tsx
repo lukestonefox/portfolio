@@ -22,11 +22,11 @@ const ExperienceData = [
 
 function Experience() {
   return (
-    <section id="experience" className="flex flex-col items-center justify-center h-screen py-4 gap-y-4">
+    <section id="experience" className="flex flex-col items-center justify-center w-full py-4 gap-y-4">
         {ExperienceData.map((data, index) => (
-            <div key={index} className="flex flex-row w-full p-2 duration-200 rounded-md gap-x-4 hover:bg-black/5 hover:[&>div>h1]:text-gray-800">
-                <p className="text-nowrap w-[15%] font-semibold text-md">{data.date}</p>
-                <div className="w-[60%] flex flex-col gap-y-2">
+            <div key={index} className="grid-cols-8 grid relative group p-2 duration-200 rounded-md gap-x-4 hover:bg-black/5 hover:[&>div>h1]:text-red-800">
+                <p className="col-span-2 mt-1 font-semibold tracking-wide text-nowrap text-md">{data.date}</p>
+                <div className="flex flex-col col-span-6 gap-y-2">
                     <h1 className="flex flex-row text-lg font-semibold text-nowrap gap-x-4">
                         <p>{data.title}</p><a href={data.companyLink} target="_blank" rel="noopener noreferrer" className="flex flex-row">Cincinnati Children's Hospital<ArrowUpRight absoluteStrokeWidth strokeWidth={1.25} size={12}/></a>
                     </h1>
