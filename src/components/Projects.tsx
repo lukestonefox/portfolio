@@ -1,16 +1,16 @@
 import { Link } from "react-router";
 import Chip from "./Chip";
 import ArchiveData from "./archiveData";
+import { ArrowUpRight } from "lucide-react";
 
 function Projects() {
 
-    const firstFewProjects = ArchiveData.slice(0, 3);
+    const firstFewProjects = ArchiveData.slice(0, 4);
     return (
-        <section id="projects" className="flex flex-col items-center justify-center w-full h-screen py-8">
+        <section id="projects" className="flex flex-col items-center justify-center w-full gap-y-4 pb-36">
             {firstFewProjects.map((data, index) => (
-                <div key={index} className="flex flex-col w-full p-2 duration-200 rounded-md gap-y-4 hover:bg-black/5 hover:text-gray-800">
-                    <h1 className="text-2xl font-semibold">{data.name}</h1>
-                    <p>{data.year}</p>
+                <div key={index} className="flex flex-col w-full p-2 duration-200 rounded-md gap-y-4 hover:bg-black/5">
+                    <h1 className="text-lg font-semibold">{data.name}</h1>
                     <div className="flex flex-row w-min gap-x-2">
                         {data.technologies.map((tech, index) => (
                             <Chip key={index} label={tech}></Chip>
@@ -18,7 +18,9 @@ function Projects() {
                     </div>
                 </div>
             ))}
-            <Link to="/archive">View the full project archive</Link>
+            <div className="flex flex-row w-full mt-4 font-semibold hover:underline">
+                <Link to="/archive">View All Projects</Link><ArrowUpRight absoluteStrokeWidth strokeWidth={1.25} size={12}/>
+            </div>
         </section>
     );
 }

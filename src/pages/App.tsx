@@ -35,12 +35,12 @@ function App() {
         <div className='flex flex-col justify-between w-full h-full mx-auto pt-36 xl:px-48 xl:flex-row gap-y-4'>
           <div>
             <Header />
-            {/* <button onClick={toggleDarkMode}>Toggle Darkmode</button> */}
+            {/* <button onClick={toggleDarkMode}>Toggle Dark Mode</button> */}
           </div>
           <main className='w-[54%] max-h-screen flex flex-col gap-y-16 overflow-y-auto'>
             <Intro />
-            <Projects />
             <Experience />
+            <Projects />
           </main>
         </div>
       </div>
