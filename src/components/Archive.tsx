@@ -6,7 +6,7 @@ import Chip from "./Chip"
 function Archive() {
     return (
         <>
-            <div className="flex items-center justify-center w-screen h-screen text-white bg-gray-800">
+            <div className="flex items-center justify-center w-screen h-screen bg-gray-200">
                 <div className="flex flex-col w-3/4 gap-y-2">
                     <div className="flex flex-row items-center mb-8 gap-x-2">
                         <Link to="/">
@@ -32,7 +32,7 @@ function Archive() {
                                         <Chip key={index} label={technology} />
                                     ))}
                                 </div>
-                                {project.github && <a target="_blank" className="duration-200 hover:text-gray-300" href={project.github} title="GitHub"><Github /></a>}
+                                {project.github && <a target="_blank" className="duration-200 hover:text-gray-600" href={project.github} title="GitHub"><Github /></a>}
                             </div>
                             {index !== ArchiveData.length-1 && <hr />}
                             </>
