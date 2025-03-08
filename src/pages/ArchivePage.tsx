@@ -1,6 +1,5 @@
-import Archive from "../components/Archive"
-function ArchivePage() {
-
+import Archive from '../components/Archive'
+function ArchivePage () {
   return (
     <>
       <Archive />

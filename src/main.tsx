@@ -9,11 +9,11 @@ import './index.css'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-    <Analytics />
+      <Analytics />
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/archive" element={<ArchivePage />} />
+        <Route path='/' element={<App />} />
+        <Route path='/archive' element={<ArchivePage />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
