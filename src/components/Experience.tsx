@@ -26,22 +26,37 @@ function Experience () {
   return (
     <section
       id='experience'
-      className='flex flex-col items-center justify-center w-full py-4 gap-y-8'
+      className='flex flex-col items-center justify-center w-full py-4 gap-y-4'
     >
       {ExperienceData.map((data, index) => (
         <div
           key={index}
-          className='relative w-full p-2 xl:grid xl:grid-cols-8 group gap-x-4'
+          className='relative grid w-full grid-cols-8 p-2 duration-200 rounded-md group gap-x-4 hover:bg-black/5'
         >
-          {/* <a className="absolute duration-200 hover:bg-black/5 -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-4 md:-inset-y-2 xl:block" href={data.companyLink} title={data.company}></a> */}
-          <p className='col-span-2 mt-1 text-sm font-semibold tracking-wide uppercase text-nowrap'>
+          <p className='col-span-2 mt-1 font-semibold tracking-wide text-nowrap text-md'>
             {data.date}
           </p>
           <div className='flex flex-col col-span-6 gap-y-2'>
-            <h1 className='font-semibold text-md'>{data.title}</h1>
-            <h2 className='text-sm italic tracking-wider'>{data.company}</h2>
-            <div>{data.description}</div>
-            <div className='flex flex-wrap gap-2'>
+            <h1 className='flex flex-row text-lg font-semibold text-nowrap gap-x-4'>
+              <p>{data.title}</p>
+              <a
+                href={data.companyLink}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex flex-row'
+              >
+                Cincinnati Children's Hospital
+                <ArrowUpRight
+                  absoluteStrokeWidth
+                  strokeWidth={1.25}
+                  size={12}
+                />
+              </a>
+            </h1>
+            <div>
+              <div className='flex flex-col'>{data.description}</div>
+            </div>
+            <div className='flex flex-row w-min gap-x-2'>
               {data.technologies.map((tech, index) => (
                 <Chip key={index} label={tech} />
               ))}
