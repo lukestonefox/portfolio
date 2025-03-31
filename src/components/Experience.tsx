@@ -29,30 +29,21 @@ function Experience () {
       className='flex flex-col items-center justify-center w-full py-4 gap-y-4'
     >
       {ExperienceData.map((data, index) => (
-        <div
+        <a
           key={index}
           className='relative grid w-full grid-cols-8 p-2 duration-200 rounded-md group gap-x-4 hover:bg-black/5'
+          href={data.companyLink}
+          target='_blank'
+          rel='noopener noreferrer'
         >
           <p className='col-span-2 mt-1 font-semibold tracking-wide text-nowrap text-md'>
             {data.date}
           </p>
-          <div className='flex flex-col col-span-6 gap-y-2'>
+          <div className='flex flex-col col-span-6 ml-4 gap-y-2'>
             <h1 className='flex flex-row text-lg font-semibold text-nowrap gap-x-4'>
-              <p>{data.title}</p>
-              <a
-                href={data.companyLink}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='flex flex-row'
-              >
-                Cincinnati Children's Hospital
-                <ArrowUpRight
-                  absoluteStrokeWidth
-                  strokeWidth={1.25}
-                  size={12}
-                />
-              </a>
+              {data.title}
             </h1>
+            <h1 className='italic tracking-wide'>{data.company}</h1>
             <div>
               <div className='flex flex-col'>{data.description}</div>
             </div>
@@ -62,7 +53,7 @@ function Experience () {
               ))}
             </div>
           </div>
-        </div>
+        </a>
       ))}
       <div className='flex flex-row w-full p-2 text-start'>
         <a
