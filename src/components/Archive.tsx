@@ -18,15 +18,16 @@ function Archive () {
           <div className='grid w-full grid-cols-12 px-4 py-2 font-semibold'>
             <p className='hidden col-span-1 lg:block'>Year</p>
             <p className='col-span-3'>Name</p>
-            <p className='hidden lg:block xl:col-span-2'>Where</p>
-            <p className='hidden lg:block lg:col-span-6 xl:col-span-4'>
-              Technologies
-            </p>
-            <p className='hidden lg:block lg:col-span-1 xl:col-span-2'>Links</p>
+            <p className='hidden lg:block lg:col-span-2'>Where</p>
+            <p className='hidden lg:block lg:col-span-4'>Technologies</p>
+            <p className='hidden lg:block lg:col-span-1'>Links</p>
           </div>
           {ArchiveData.map((project, index) => (
             <Fragment key={index}>
-              <div key={index} className='grid w-full grid-cols-12 px-4 py-4'>
+              <div
+                key={index}
+                className='grid w-full grid-cols-12 px-4 py-4 auto'
+              >
                 <p className='hidden col-span-1 lg:block'>{project.year}</p>
                 <a
                   href={project.github}
@@ -35,7 +36,7 @@ function Archive () {
                   {project.name}
                 </a>
                 <p className='hidden col-span-2 lg:block'>{project.where}</p>
-                <div className='flex-row flex-wrap hidden gap-2 text-xs lg:col-span-6 xl:col-span-4 lg:flex'>
+                <div className='flex-row flex-wrap hidden gap-2 text-xs lg:col-span-4 xl:col-span-4 lg:flex'>
                   {project.technologies.map((technology, index) => (
                     <Chip key={index} label={technology} />
                   ))}

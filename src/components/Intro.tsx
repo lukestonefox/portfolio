@@ -12,7 +12,7 @@ function Intro () {
       <p>
         I'm currently a junior studying computer science at the University of
         Cincinnati, set to graduate in April 2026. I'm currently seeking a co-op
-        or internship opportunity for the Summer of 2026.{' '}
+        or internship opportunity for the Summer of 2025.{' '}
       </p>
       <p>
         During my time at UC, I've had the opportunity to develop web
