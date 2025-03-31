@@ -57,7 +57,7 @@ function Experience () {
       ))}
       <div className='flex flex-row w-full p-2 text-start'>
         <a
-          href='src\assets\LucasFoxSpring2025.pdf'
+          href='.vercel\LucasFoxSpring2025.pdf'
           target='_blank'
           className='flex flex-row font-semibold hover:underline'
         >
