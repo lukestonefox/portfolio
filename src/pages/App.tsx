@@ -12,7 +12,7 @@ function App () {
           <div className='lg:h-screen lg:sticky lg:top-0 lg:pt-36 lg:pb-36'>
             <Header />
           </div>
-          <main className='w-full lg:w-[52%] overflow-y-auto gap-y-16 lg:px-8 sm:px-2 lg:h-full flex flex-col'>
+          <main className='w-full lg:w-[59%] overflow-y-auto gap-y-16 lg:px-8 sm:px-2 lg:h-full flex flex-col'>
             <Intro />
             <Experience />
             <Projects />
