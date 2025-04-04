@@ -60,6 +60,7 @@ function Experience () {
           href='.vercel\LucasFoxSpring2025.pdf'
           target='_blank'
           className='flex flex-row font-semibold hover:underline'
+          rel='noopener noreferrer'
         >
           View Full Resume
           <ArrowUpRight absoluteStrokeWidth strokeWidth={1.25} size={12} />
